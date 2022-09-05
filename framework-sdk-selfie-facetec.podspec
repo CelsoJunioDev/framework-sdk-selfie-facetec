@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'framework-sdk-selfie-facetec'
-    s.version           = '1.7'
+    s.version           = '1.8'
     s.summary           = 'framework-sdk-selfie-facetec'
     s.homepage          = 'https://github.com/CelsoJunioDev/framework-sdk-selfie-facetec'
 

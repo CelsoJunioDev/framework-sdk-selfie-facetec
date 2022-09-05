@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.123.8 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name brscan_sdk_selfie_ios
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import CommonCrypto
 import CoreLocation
@@ -13,6 +14,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
+import _StringProcessing
 @_exported import brscan_sdk_selfie_ios
 @_inheritsConvenienceInitializers @objc public class ConfiguracaoTextoSelfie : ObjectiveC.NSObject, Swift.Codable {
   public var brscan_selfie_erro_selfie_captura: Swift.String
@@ -59,7 +61,7 @@ import _Concurrency
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturaSViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_selfie_ios.CapturaSViewControllerDelegate?
   @objc @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, wizard: Swift.Bool, segurancaExtraRootCheck: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool = false, tipoRetorno: Swift.String = "base64", customizacaoTexto: brscan_sdk_selfie_ios.ConfiguracaoTextoSelfie = ConfiguracaoTextoSelfie(), retornarErros: Swift.Bool = false, segurancaExtraEmulatorCheck: Swift.Bool = false)
-  @objc @_Concurrency.MainActor(unsafe) override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @objc deinit
 }
 extension brscan_sdk_selfie_ios.CapturaSViewController : brscan_sdk_selfie_ios.CapturarSelfieViewControllerDelegate {
@@ -67,7 +69,7 @@ extension brscan_sdk_selfie_ios.CapturaSViewController : brscan_sdk_selfie_ios.C
   @_Concurrency.MainActor(unsafe) public func erro(_ erro: brscan_sdk_selfie_ios.Erro, _ id: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class ReadableMapSelfieConfiguracaoTexto {
-  public static var shared: brscan_sdk_selfie_ios.ReadableMapSelfieConfiguracaoTexto
+  public static let shared: brscan_sdk_selfie_ios.ReadableMapSelfieConfiguracaoTexto
   public func mapSelfieConfiguracaoTexto(customizacaoTexto: Foundation.NSDictionary) -> brscan_sdk_selfie_ios.ConfiguracaoTextoSelfie
   @objc deinit
 }
@@ -82,7 +84,7 @@ public struct Erro : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 extension UIKit.UIButton {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
 }
 extension UIKit.UIColor {
   public var primary: UIKit.UIColor {
@@ -512,8 +514,8 @@ extension brscan_sdk_selfie_ios.Device {
   public struct ApplePencilSupport : Swift.OptionSet {
     public var rawValue: Swift.UInt
     public init(rawValue: Swift.UInt)
-    public static var firstGeneration: brscan_sdk_selfie_ios.Device.ApplePencilSupport
-    public static var secondGeneration: brscan_sdk_selfie_ios.Device.ApplePencilSupport
+    public static let firstGeneration: brscan_sdk_selfie_ios.Device.ApplePencilSupport
+    public static let secondGeneration: brscan_sdk_selfie_ios.Device.ApplePencilSupport
     public typealias ArrayLiteralElement = brscan_sdk_selfie_ios.Device.ApplePencilSupport
     public typealias Element = brscan_sdk_selfie_ios.Device.ApplePencilSupport
     public typealias RawValue = Swift.UInt
@@ -597,7 +599,7 @@ public protocol CapturarSelfieViewControllerDelegate {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CapturarSelfieViewController : UIKit.UIViewController, Foundation.URLSessionDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
-    @_Concurrency.MainActor(unsafe) @objc get
+    @objc get
   }
   @_Concurrency.MainActor(unsafe) public var delegate: brscan_sdk_selfie_ios.CapturarSelfieViewControllerDelegate?
   @_Concurrency.MainActor(unsafe) required public init(chave: Swift.String, wizard: Swift.Bool = false, segurancaExtraSslPinning: Swift.Bool, tipoRetorno: Swift.String = "base64", tokenTentativa: Swift.Int, retornarErros: Swift.Bool)
@@ -611,7 +613,7 @@ public protocol CapturarSelfieViewControllerDelegate {
 extension brscan_sdk_selfie_ios.CapturarSelfieViewController : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
 }
 extension UIKit.UIFont {
-  public static var loadFonts: ()
+  public static let loadFonts: ()
 }
 extension UIKit.UIFont {
   public var ligth: Swift.String {
@@ -628,90 +630,7 @@ extension UIKit.UIFont {
   }
 }
 public enum Model : Swift.String {
-  case simulator
-  case iPod1
-  case iPod2
-  case iPod3
-  case iPod4
-  case iPod5
-  case iPod6
-  case iPod7
-  case iPad2
-  case iPad3
-  case iPad4
-  case iPadAir
-  case iPadAir2
-  case iPadAir3
-  case iPadAir4
-  case iPadAir5
-  case iPad5
-  case iPad6
-  case iPad7
-  case iPad8
-  case iPad9
-  case iPadMini
-  case iPadMini2
-  case iPadMini3
-  case iPadMini4
-  case iPadMini5
-  case iPadMini6
-  case iPadPro9_7
-  case iPadPro10_5
-  case iPadPro11
-  case iPadPro2_11
-  case iPadPro3_11
-  case iPadPro12_9
-  case iPadPro2_12_9
-  case iPadPro3_12_9
-  case iPadPro4_12_9
-  case iPadPro5_12_9
-  case iPhone4
-  case iPhone4S
-  case iPhone5
-  case iPhone5S
-  case iPhone5C
-  case iPhone6
-  case iPhone6Plus
-  case iPhone6S
-  case iPhone6SPlus
-  case iPhoneSE
-  case iPhone7
-  case iPhone7Plus
-  case iPhone8
-  case iPhone8Plus
-  case iPhoneX
-  case iPhoneXS
-  case iPhoneXSMax
-  case iPhoneXR
-  case iPhone11
-  case iPhone11Pro
-  case iPhone11ProMax
-  case iPhoneSE2
-  case iPhone12Mini
-  case iPhone12
-  case iPhone12Pro
-  case iPhone12ProMax
-  case iPhone13Mini
-  case iPhone13
-  case iPhone13Pro
-  case iPhone13ProMax
-  case iPhoneSE3
-  case AppleWatch1
-  case AppleWatchS1
-  case AppleWatchS2
-  case AppleWatchS3
-  case AppleWatchS4
-  case AppleWatchS5
-  case AppleWatchSE
-  case AppleWatchS6
-  case AppleWatchS7
-  case AppleTV1
-  case AppleTV2
-  case AppleTV3
-  case AppleTV4
-  case AppleTV_4K
-  case AppleTV2_4K
-  case unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPad5, iPad6, iPad7, iPad8, iPad9, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -724,10 +643,10 @@ extension UIKit.UIDevice {
   }
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var viewWidth: CoreGraphics.CGFloat {
+  @_Concurrency.MainActor(unsafe) public var viewWidth: CoreFoundation.CGFloat {
     get
   }
-  @_Concurrency.MainActor(unsafe) public var viewHeight: CoreGraphics.CGFloat {
+  @_Concurrency.MainActor(unsafe) public var viewHeight: CoreFoundation.CGFloat {
     get
   }
 }
@@ -738,3 +657,10 @@ public struct Selfie : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+extension brscan_sdk_selfie_ios.Device.Orientation : Swift.Equatable {}
+extension brscan_sdk_selfie_ios.Device.Orientation : Swift.Hashable {}
+extension brscan_sdk_selfie_ios.Device.CameraType : Swift.Equatable {}
+extension brscan_sdk_selfie_ios.Device.CameraType : Swift.Hashable {}
+extension brscan_sdk_selfie_ios.Model : Swift.Equatable {}
+extension brscan_sdk_selfie_ios.Model : Swift.Hashable {}
+extension brscan_sdk_selfie_ios.Model : Swift.RawRepresentable {}
