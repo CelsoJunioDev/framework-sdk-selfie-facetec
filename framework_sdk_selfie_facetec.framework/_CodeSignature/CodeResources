@@ -18,7 +18,7 @@
 		</data>
 		<key>Frameworks/FaceTecSDK.framework/FaceTecSDK</key>
 		<data>
-		m3HcFd0YkGdfr2bi2wjcSRSrZkU=
+		8vNNyFGTriFzOok4mtxLbN2gzSo=
 		</data>
 		<key>Frameworks/FaceTecSDK.framework/GenericGuidanceContentLayout.nib</key>
 		<data>
@@ -181,45 +181,53 @@
 		<data>
 		8GHP1TOUMs+FMYrV872D99/JZQA=
 		</data>
-		<key>Headers/brscan_sdk_selfie_ios-Swift.h</key>
-		<data>
-		SovjThXdD5ua08YeJxGXhNSieBo=
-		</data>
 		<key>Headers/brscan_sdk_selfie_ios.h</key>
 		<data>
 		EbhfJQOZirWSaFpRxvKa4or8MRw=
 		</data>
+		<key>Headers/framework_sdk_selfie_facetec-Swift.h</key>
+		<data>
+		b94UOSZXMxiufFsJq4IqpIh+vZ4=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		T4CbiT3YqeRvtl/uz5TkFFhIwOA=
+		9A03d7fqhA5miaaW9mKGviWJUgE=
 		</data>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		W2jPneWfxjzB4zcXBSrjfbfeR7c=
+		JI2zEv7VRS31ffJWlcJ6Fofiqww=
 		</data>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		XvOd99gczlMJMCqm7U4lI2uc2o8=
+		JI2zEv7VRS31ffJWlcJ6Fofiqww=
 		</data>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		4FKejDKhePlsyVDIJEJgtQZFRVQ=
+		vw/0y/39U5HlRcXMigCQzeii3/g=
 		</data>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		cxsjJOgtXjrODYeYOgnwSSgpT9A=
+		8ZsETmv/jHdLaYTARe8klGlcwKw=
 		</data>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4FKejDKhePlsyVDIJEJgtQZFRVQ=
+		eTlWGBrfh0g5URX/SM3XXArab6Q=
 		</data>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		/Nh+8is6QwPv54wC6hIrH28ALi8=
+		vw/0y/39U5HlRcXMigCQzeii3/g=
+		</data>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		8ZsETmv/jHdLaYTARe8klGlcwKw=
+		</data>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		eTlWGBrfh0g5URX/SM3XXArab6Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		0BCWla8/RKkWGhujdOysoqkYv/Y=
+		fzNsviEWkxYl42d/zidlfvBjsmU=
 		</data>
 		<key>Roboto-Bold.ttf</key>
 		<data>
@@ -309,7 +317,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mJHd2SL1NYczVKWsSwy+YLdaeTRFdoN0gYS9Z7H8h6w=
+			J/FtWS4GSunnXEAmp1qg3TlFR5FyDtRV4oYenkRWpQ4=
 			</data>
 		</dict>
 		<key>Frameworks/FaceTecSDK.framework/GenericGuidanceContentLayout.nib</key>
@@ -587,13 +595,6 @@
 			kbq2dpNCCxoHIqVAZKsrsCWUNd5FvHAv386Je16/1q0=
 			</data>
 		</dict>
-		<key>Headers/brscan_sdk_selfie_ios-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hTQrS8HkOLBTNXmvKGxN7ToEB/hBlHnE3yCOYffkh5w=
-			</data>
-		</dict>
 		<key>Headers/brscan_sdk_selfie_ios.h</key>
 		<dict>
 			<key>hash2</key>
@@ -601,53 +602,74 @@
 			GVHI2iBuxAC8I2JJ3n3fJWadtgtgnVvZrnGlSp7S0qc=
 			</data>
 		</dict>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<key>Headers/framework_sdk_selfie_facetec-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JjKa0pxVk+t0Wjqy5Rm5qCp/WZfu3LZiog/fg5dFBNU=
+			7CfriemQ8nwHdqr9/TO46sImW1vu9zZWwCYTRkOfvOo=
 			</data>
 		</dict>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.abi.json</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zyeV9IfqkOh2ySs9cgkxZqGEhQOhceXMlD9CzyEKHo4=
+			za5L2uEJESNJcjlJHp9jgAJ6SXQqEIg/z1qBwEYOFGs=
 			</data>
 		</dict>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NQVjypSdb/mTg73rlP8ai7rZ39mvV1tvMy9JtyKwTJw=
+			za5L2uEJESNJcjlJHp9jgAJ6SXQqEIg/z1qBwEYOFGs=
 			</data>
 		</dict>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+G7pbfgO8YCHP/5ggarj1Ip00Ymj4+FUAkW31auKp0=
+			XhOrROAYU5JG//hkPOItIHcV2oG4fK0wt593xYCcUgI=
 			</data>
 		</dict>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NQVjypSdb/mTg73rlP8ai7rZ39mvV1tvMy9JtyKwTJw=
+			797MlCzDa/VLiv8+yVXSe1Pf4LNf8PTfayCBmLCbZpU=
 			</data>
 		</dict>
-		<key>Modules/brscan_sdk_selfie_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cDCUnrMbpN2Rk9Fb6QtRJcpQDOB7xWDT+hL2JanG9gk=
+			fjVbatrXEKCQQdlEv09wT1XSM+FFB5XqPVsXzqXJyuQ=
+			</data>
+		</dict>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XhOrROAYU5JG//hkPOItIHcV2oG4fK0wt593xYCcUgI=
+			</data>
+		</dict>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			797MlCzDa/VLiv8+yVXSe1Pf4LNf8PTfayCBmLCbZpU=
+			</data>
+		</dict>
+		<key>Modules/framework_sdk_selfie_facetec.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fjVbatrXEKCQQdlEv09wT1XSM+FFB5XqPVsXzqXJyuQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3a6EXNURQO1kE0xKmcUm4tptG1eIiHtBjUNQjwWtiwQ=
+			h9CprEO2bIQDNQh+8s6bsfOd0yCJwzBQ5YmuAs/vTeY=
 			</data>
 		</dict>
 		<key>Roboto-Bold.ttf</key>

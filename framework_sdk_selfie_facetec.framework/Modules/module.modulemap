@@ -1,11 +1,4 @@
-framework module brscan_sdk_selfie_ios {
-  umbrella header "brscan_sdk_selfie_ios.h"
-
-  export *
-  module * { export * }
-}
-
-module brscan_sdk_selfie_ios.Swift {
-  header "brscan_sdk_selfie_ios-Swift.h"
+framework module framework_sdk_selfie_facetec {
+  header "framework_sdk_selfie_facetec-Swift.h"
   requires objc
 }
