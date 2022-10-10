@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'framework-sdk-selfie-facetec'
-    s.version           = '2.2'
+    s.version           = '2.4'
     s.summary           = 'framework-sdk-selfie-facetec'
     s.homepage          = 'https://github.com/CelsoJunioDev/framework-sdk-selfie-facetec'
 
@@ -9,6 +9,10 @@ Pod::Spec.new do |s|
 
     s.platform          = :ios
     s.source            = { :git => 'https://github.com/CelsoJunioDev/framework-sdk-selfie-facetec.git', :tag => s.version.to_s }
+
+    s.resource_bundles = {
+     'selfie-ios-resources' => ['resources/*/*.{png,ttf,plist}'] 
+    }
 
     s.ios.deployment_target = '11.0'
     s.ios.vendored_frameworks = 'framework_sdk_selfie_facetec.framework', 'FaceTecSDK.xcframework'
